@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer Autônomo</title>
+    <meta name="description" content="Landing page simples para personal trainer autônomo, com foco em treinos personalizados.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cabecalho / menu -->
+    <header class="topo">
+        <div class="container topo-conteudo">
+            <div class="logo">
+                <!-- logo so texto -->
+                <span>PT<span class="logo-destaque">Fit</span></span>
+            </div>
+
+            <nav class="menu">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato" class="btn-menu">Agendar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- destaque inicial -->
+    <section class="hero">
+        <div class="container hero-conteudo">
+            <div class="hero-texto">
+                <h1>Treinos personalizados p/ sua rotina</h1>
+                <p>
+                    Atendimentos individuais em parques, academias parceiras ou online.
+                    Plano montado conforme seu objetivo: emagrecimento, massa ou qualidade de vida.
+                </p>
+                <a href="#contato" class="btn-principal">Quero falar com o personal</a>
+                <p class="info-pequena">1ª conversa sem custo, só p/ entender sua rotina.</p>
+            </div>
+
+            <div class="hero-card">
+                <h2>Horários flexíveis</h2>
+                <ul>
+                    <li>Seg a Sex – 6h às 22h</li>
+                    <li>Atendimento presencial região central</li>
+                    <li>Sessões online p/ outras regiões</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre -->
+    <section id="sobre" class="secao">
+        <div class="container secao-grid">
+            <div>
+                <h2>Sobre o profissional</h2>
+                <p>
+                    Sou personal trainer formado em Educação Física, com mais de 5 anos de experiência
+                    em treinos funcionais e musculação. Trabalho com grupos pequenos e atendimento
+                    bem individual.
+                </p>
+                <p>
+                    A ideia é montar um plano que caiba na sua rotina, sem treino impossível de seguir.
+                    A cada semana a gente ajusta conforme sua resposta e feedback.
+                </p>
+            </div>
+            <div class="sobre-lista">
+                <h3>Foco do trabalho</h3>
+                <ul>
+                    <li>Acompanhamento pelo WhatsApp</li>
+                    <li>Planilhas simples de treino</li>
+                    <li>Ajuste de carga toda semana</li>
+                    <li>Orientação básica de hábitos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- servicos -->
+    <section id="servicos" class="secao fundo-cinza">
+        <div class="container">
+            <h2>Serviços oferecidos</h2>
+
+            <div class="cards-servicos">
+                <article class="card">
+                    <h3>Treino presencial</h3>
+                    <p>
+                        Sessões individuais em academias parceiras ou espaços abertos.
+                        Bom p/ quem precisa de correção de postura e acompanhamento de perto.
+                    </p>
+                    <p class="card-preco">A partir de R$ 90 / sessão</p>
+                </article>
+
+                <article class="card">
+                    <h3>Treino online</h3>
+                    <p>
+                        Aulas por vídeo chamada + envio de plano de treino.
+                        Ideal p/ quem tem pouco tempo ou treina em casa.
+                    </p>
+                    <p class="card-preco">A partir de R$ 70 / sessão</p>
+                </article>
+
+                <article class="card">
+                    <h3>Plano mensal</h3>
+                    <p>
+                        Pacote com treinos semanais, ajuste de carga e acompanhamento por msg.
+                        Opção mais em conta p/ resultado em médio prazo.
+                    </p>
+                    <p class="card-preco">Planos a partir de R$ 320 / mês</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- depoimentos -->
+    <section id="depoimentos" class="secao">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="cards-depoimentos">
+                <article class="card depoimento">
+                    <p class="depoimento-texto">
+                        “Comecei o acompanhamento há 6 meses e já perdi 8kg. O treino é puxado,
+                        mas sempre adaptado p/ minha realidade.”
+                    </p>
+                    <p class="depoimento-nome">– Ana, 34 anos</p>
+                </article>
+
+                <article class="card depoimento">
+                    <p class="depoimento-texto">
+                        “Eu já tinha tentado treinar sozinho, mas desistia rápido. Com o acompanhamento
+                        semanal ficou bem mais fácil manter o foco.”
+                    </p>
+                    <p class="depoimento-nome">– Carlos, 29 anos</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- contato -->
+    <section id="contato" class="secao fundo-cinza">
+        <div class="container contato-grid">
+            <div>
+                <h2>Agende uma conversa</h2>
+                <p>
+                    Preencha os dados ao lado que entro em contato p/ combinar um horário de avaliação
+                    inicial. Não é compromisso de matrícula, é só p/ entender seu objetivo.
+                </p>
+                <p class="info-pequena">
+                    Campos com * são obrigatórios.
+                </p>
+            </div>
+
+            <form class="form-contato">
+                <!-- nome -->
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <!-- email -->
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+
+                <!-- telefone -->
+                <label for="telefone">Telefone / Whats *</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+
+                <!-- objetivo -->
+                <label for="objetivo">Principal objetivo *</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="">Selecione</option>
+                    <option value="emagrecimento">Emagrecimento</option>
+                    <option value="massa">Ganho de massa</option>
+                    <option value="condicionamento">Condicionamento físico</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <!-- msg -->
+                <label for="mensagem">Fale da sua rotina</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex: quantos dias consegue treinar, se ja faz algo, etc."></textarea>
+
+                <button type="submit" class="btn-principal">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- rodape -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p>Personal Trainer Autônomo – PT Fit</p>
+            <p class="rodape-info">
+                Site criado como atividade da disciplina de Web Standards.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
